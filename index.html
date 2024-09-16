@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Merge PDFs</title>
+  <title>Merge and Rename PDFs</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <h1>Merge PDF </h1>
+    <h1>Merge PDF</h1>
     <a href="https://rohitigec.github.io/Contact-Me/" target="_blank">
       <button id="loginButton">Contact Me</button>
     </a>
-    
   </header>
 
   <main>
@@ -21,24 +21,28 @@
       <label for="fileInput">Upload PDFs:</label>
       <input type="file" id="fileInput" multiple accept="application/pdf" />
     </div>
-    <button onclick="mergePDFs()">Merge PDFs</button>
-    <a id="downloadLink" style="color: rgb(12, 12, 104);">Download Merged PDF</a>
+
+    <div class="rename-container">
+      <label for="pdfName">Enter new PDF name:</label>
+      <input type="text" id="pdfName" placeholder="Enter file name" />
+    </div>
+
+    <button id="mergeButton">Merge PDFs</button>
+
+    <a id="downloadLink" style="color: rgb(12, 12, 104); display: none;">Download Merged PDF</a>
   </main>
+
   <footer>
     <div class="box-container">
-
-    
-    
-        <div class="box">
-            <h3>Rohit Chakravarti</h3><h3>(Sihora) Jabalpur, Madhya Pradesh</h3>
-            <p> <i class="fas fa-phone"></i>+91 9302937743</p>
-            <p> <i class="fas fa-envelope"></i>rohitchakravarti2002@gmail.com</p>
-    
-      
+      <div class="box">
+        <h3>Rohit Chakravarti</h3><h3>(Sihora) Jabalpur, Madhya Pradesh</h3>
+        <p><i class="fas fa-phone"></i> +91 9302937743</p>
+        <p><i class="fas fa-envelope"></i> rohitchakravarti2002@gmail.com</p>
+      </div>
     </div>
   </footer>
 
+ 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
