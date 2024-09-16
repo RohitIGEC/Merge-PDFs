@@ -1,96 +1,103 @@
+/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  header {
-    background-color: #19063d;
-    color: yello;
-    padding: 20px;
-    text-align: left;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  #loginButton {
-    background-color: yellow;
-    color: #340d7e;
-    border: 2px solid #f70b0b;
-    padding: 10px 20px;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
-  
-  #loginButton:hover {
-    background-color: #5cd4e9;
-  }
-  
-  
-  main {
-    padding: 20px;
-    text-align: left;
-  }
-  .file-input-container {
-    background-color: #caeff8;
-    margin: 20px 0;
-    padding: 10px;
-    border: 2px solid #0f022e;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .file-input-container label {
-    font-size: 18px;
-    margin-bottom: 10px;
-    display: block;
-  }
-  
-  #fileInput {
-    display: block;
-    margin: 10px auto;
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #030303;
-    border-radius: 5px;
-  }
-  
-  
-  #fileInput {
-    margin-bottom: 10px;
-  }
-  
-  button {
-    background-color: #ee2929;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    color: white;
-    border: solid;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #c71d5e;
-  }
-  
-  #downloadLink {
-    margin-top: 10px;
-    display: block;
-  }
-  
-  footer h3 {
-    color: yellow; 
-  }
-  
-  footer p {
-    color: yellow; 
-  }
-  
-  footer {
-    background-color: #19063d;
-  }
+header {
+  background-color: #19063d;
+  color: yellow;
+  padding: 20px;
+  text-align: left;
+}
+
+header h1 {
+  margin: 0;
+}
+
+#loginButton {
+  background-color: yellow;
+  color: #340d7e;
+  border: 2px solid #f70b0b;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+#loginButton:hover {
+  background-color: #5cd4e9;
+}
+
+main {
+  padding: 20px;
+}
+
+.file-input-container, .rename-container {
+  background-color: #caeff8;
+  margin: 20px 0;
+  padding: 10px;
+  border: 2px solid #0f022e;
+  text-align: center;
+}
+
+
+
+ .rename-container {
+  background-color: #eb8ee6;
+  margin: 20px 0;
+  padding: 10px;
+  border: 2px solid #0f022e;
+  text-align: center;
+}
+
+
+.file-input-container label, .rename-container label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#fileInput, #pdfName {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #030303;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ee2929;
+  color: white;
+  border: solid;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c71d5e;
+}
+
+#downloadLink {
+  margin-top: 10px;
+  display: block;
+  color: #1976d2;
+  text-decoration: none;
+}
+
+#downloadLink:hover {
+  text-decoration: underline;
+}
+
+footer h3, footer p {
+  color: yellow;
+}
+
+footer {
+  background-color: #19063d;
+  padding: 10px;
+  text-align: center;
+}
