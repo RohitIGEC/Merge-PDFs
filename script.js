@@ -1,4 +1,3 @@
-// script.js
 async function mergePDFs() {
   const fileInput = document.getElementById('fileInput');
   const downloadLink = document.getElementById('downloadLink');
