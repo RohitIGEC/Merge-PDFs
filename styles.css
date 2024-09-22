@@ -1,35 +1,42 @@
-/* styles.css */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #818181; 
+  color: #e0e0e0; 
 }
 
 header {
-  background-color: #19063d;
-  color: yellow;
+  background-color: rgb(63, 60, 60);
   padding: 20px;
   text-align: left;
+  position: relative;
 }
 
 header h1 {
   margin: 0;
+  color: aqua; 
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.6); 
 }
 
-#loginButton {
-  background-color: yellow;
+#ContactMeButton {
+  background-color: aqua;
   color: #340d7e;
-  border: 2px solid #f70b0b;
+  border: 2px solid #1d0431;
   padding: 10px 20px;
   cursor: pointer;
   position: absolute;
   right: 20px;
   top: 20px;
+  border-radius: 30px;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-#loginButton:hover {
+#ContactMeButton:hover {
   background-color: #5cd4e9;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(228, 148, 221, 0.8);
 }
 
 main {
@@ -37,28 +44,30 @@ main {
 }
 
 .file-input-container, .rename-container {
-  background-color: #caeff8;
+  background-color: rgb(71, 88, 102);
   margin: 20px 0;
   padding: 10px;
   border: 2px solid #0f022e;
   text-align: center;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  transition: background 0.3s, box-shadow 0.3s; 
 }
 
-
-
- .rename-container {
-  background-color: #eb8ee6;
-  margin: 20px 0;
-  padding: 10px;
-  border: 2px solid #0f022e;
-  text-align: center;
+.rename-container {
+  background-color: rgba(235, 142, 230, 0.1);
 }
 
+.file-input-container:hover, .rename-container:hover {
+  background-color: rgba(0, 212, 255, 0.2); 
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.8); 
+}
 
 .file-input-container label, .rename-container label {
   font-size: 18px;
   margin-bottom: 10px;
   display: block;
+  color: #00ffcc; 
 }
 
 #fileInput, #pdfName {
@@ -67,6 +76,8 @@ main {
   margin-bottom: 10px;
   border: 1px solid #030303;
   border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1); 
+  color: #e0e0e0; 
 }
 
 button {
@@ -75,29 +86,38 @@ button {
   border: solid;
   padding: 10px 20px;
   cursor: pointer;
+  border-radius: 30px;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 button:hover {
   background-color: #c71d5e;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(199, 29, 94, 0.8); 
 }
 
 #downloadLink {
   margin-top: 10px;
   display: block;
-  color: #1976d2;
+  color: #ffee00; 
   text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
 #downloadLink:hover {
-  text-decoration: underline;
+  color: #eaee1d; 
+  text-shadow: 0 0 10px rgba(92, 212, 233, 0.6); 
 }
 
 footer h3, footer p {
-  color: yellow;
+  color: #00ffcc; 
 }
 
 footer {
   background-color: #19063d;
   padding: 10px;
   text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
